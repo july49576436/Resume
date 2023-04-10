@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta 
+    http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+</head>
+
+
+<script>
+window.onload = function() {
+    move1();
+    move2();
+    move3();
+    move4();
+};
+
+function move1() {
+    var ans = document.getElementById("file");
+    var value = 1;
+    var num = document.getElementById("schedule");
+    var id = setInterval(frame, 70);
+    function frame() {
+        if (value >= 75) {
+            clearInterval(id);
+        }
+        else {
+            value++;
+            ans.value = value;
+            num.innerHTML = value + "%";
+        }
+    }
+}
+
+function move2() {
+    var ans = document.getElementById("file2");
+    var value = 1;
+    var num = document.getElementById("schedule2");
+    var id = setInterval(frame, 60);
+    function frame() {
+        if (value >= 70) {
+            clearInterval(id);
+        }
+        else {
+            value++;
+            ans.value = value;
+            num.innerHTML = value + "%";
+        }
+    }
+}
+
+function move3() {
+    var ans = document.getElementById("file3");
+    var value = 1;
+    var num = document.getElementById("schedule3");
+    var id = setInterval(frame, 50);
+    function frame() {
+        if (value >= 80) {
+            clearInterval(id);
+        }
+        else {
+            value++;
+            ans.value = value;
+            num.innerHTML = value + "%";
+        }
+    }
+}
+
+function move4() {
+    var ans = document.getElementById("file4");
+    var value = 1;
+    var num = document.getElementById("schedule4");
+    var id = setInterval(frame, 50);
+    function frame() {
+        if (value >= 85) {
+            clearInterval(id);
+        }
+        else {
+            value++;
+            ans.value = value;
+            num.innerHTML = value + "%";
+        }
+    }
+}
+
+</script>
+
+<body>
+      <header id="top">
+        <h1>Resume</h1>
+ 
+    </header>
+    <nav>
+      <a href="#top">About Me</a>
+      <a href="#skills">Skill</a>
+      <a href="#project">Project</a>
+      <a href="#activity">Activity</a>
+      <a href="#certificate">Certificate</a>
+      <a href="#photos">Photos</a>
+    </nav> 
+    <!-- 第一區底色 --> 
+    <section class="no1" >
+      <div class="myphoto">
+        <img src="image/3.jpg" >
+      </div>
+      <div class="intro">
+        <p style="font-size: 25px;"></p>
+                    <p class="letter">
+                      <table>
+                        <div class="tbody">
+                          <tbody>
+                          <tr>
+                            <th class="a">Name</th>
+                            <td colspan="3" class="b" style="text-align:justify"> 孫 &nbsp;珮 &nbsp;珊</td>
+                         </tr>
+                          <tr>
+                            <th class="a">Birth</th>
+                            <td colspan="3" class="b"> 2002.09.28</td>
+                        </tr>
+                        <tr>
+                            <th class="a">Personality</th>
+                            <td colspan="3" class="b">善良、溫和、樂觀</td>
+                        </tr>
+                        <tr>
+                            <th class="a">Interest</th>
+                            <td class="b">閱讀</td>
+                            <td class="b">騎單車</td>
+                            <td class="b">旅遊</td>
+                        </tr>
+                    </tbody></table></div>
+                    <div class="tbody2">
+                      <h4 class="me">
+                        你好呀~歡迎來到這個網頁<br>
+                        我是孫珮珊，一個天真爛漫的女生<br>
+                        平時有點傻乎乎的，還常常忘東忘西<br>
+                        喜歡欣賞沿途的風景，過程比結果更有意義<br>
+                        下一站是關於我的技能與經歷，祝您旅途愉快!
+                      </h4>
+                    </div>
+                    </p>
+                </div>
+                <div class="contact">
+                  <a href="https://www.facebook.com/profile.php?id=100006165769127"><img src="image/fb.png" height="45px" weight="45px"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://www.instagram.com/peishan_sun/"><img src="image/ig.png" height="45px" weight="45px"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="mailto:july49576436@gmail.com"><img src="image/email.png" height="45px" weight="45px"></a>
+              </div>
+      </div>
+      <div><h3 class="motto">"沒有做不到的事，只有你想或不想"</h3></div>
+    </section>
+
+    <!--第二區底色-->
+    <section class="no2">
+      <div class="content" id="skills">
+        <h3 class="subtitle">程式能力</h3>
+        <!-- 使用javascript進度條 -->
+        <div class="up">
+        <div class="array_item">
+          <h4 class="program"><img src="image/python.png" height="30px"weight="30px">&nbsp;Python</h4>
+          <progress id="file" max="100" value="1" > </progress>
+          <p id="schedule">1%</p>
+        </div> 
+
+        <div class="array_item2">
+          <h4 class="program"><img src="image/java.png" height="30px"weight="30px">&nbsp;JAVA</h4>
+          <progress id="file2" max="100" value="1"> </progress>
+          <p id="schedule2">1%</p>
+        </div> 
+        
+        <div class="array_item3">
+          <h4 class="program"><img src="image/css.png" height="30px"weight="30px">&nbsp;CSS3</h4>
+          <progress id="file3" max="100" value="1"> </progress>
+          <p id="schedule3">1%</p>
+        </div> 
+        
+        <div class="array_item4">
+          <h4 class="program"><img src="image/html.png" height="30px"weight="30px">&nbsp;Html5</p>
+          <progress id="file4" max="100" value="1"> </progress>
+          <p id="schedule4">1%</p>
+        </div> 
+        </div>
+      </div>
+    </section>
+    <!-- 第三區 -->
+    <section class="content2" id="project">
+        <h3 class="subtitle2">課程專案</h3>
+        <main>
+        <section class="card">
+          <h2 class="h22">管理學</h2>
+          <h4 class="h44">大一上學期</h4>
+          <img src="image/manage.jpg" />
+          <h4 class="h45">
+            小組一起去白沙灣淨灘，在撿拾垃圾的過程中使我反思自己平時處理垃圾的方式是否合宜。<br>透過和組員互相討論與規劃行程，也學習到管理組織的技巧，以及對環境保育有更多認識。
+          </h4>
+        </section>
+  
+        <section class="card">
+          <h2 class="h22">企業概論</h2>
+          <h4 class="h44">大一下學期</h4>
+          <img src="image/business.jpg" />
+          <h4  class="h45">透過和合夥人共組公司的方式，使我學習到一間公司自創立前規劃與實際運作的過程。<br>我擔任的是人資長，紀錄我們公司的人事出勤以及會議記錄，很高興最後有達到目標營業額。</h4>
+        </section>
+  
+      <section class="card">
+        <h2 class="h22">網路程式設計</h2>
+        <h4 class="h44">大二上學期</h4>
+        <img src="image/net.png" />
+        <h4  class="h45">
+          學習JSP動態網頁技術，期末專案是和甲班學習前端的同學做前後端整合成一電商網站。<br>透過實作我學習到如何將網頁連結資料庫以及一些後端的網頁功能，也才知道一個功能完整網頁需要不同專業的人共同合作完成。
+        </h4>
+      </section>
+    </main>
+    </section>
+
+        <!-- 第四區 -->
+      <section class="content3" id="activity">
+        <h3 class="subtitle3">活動經歷</h3>
+        <main class="main2">
+          <section>
+            <div class="wrap">
+            <div><h3 class="h33">經<br><br>濟<br><br>營<br><br>隊</h3></div>
+            <img src="image/eco.jpg" />
+            <div class="card2">
+            <p class="h46">
+              <br><br>高一暑假參加國立清華大學經濟系辦的營隊，學到了很多經濟學知識例如:奈許均衡、國內生產毛額、通貨膨脹與緊縮等等。讓我對商業方面的有更多興趣，影響我選擇商學院的科系。
+            </p>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <h3 class="h33">社<br><br>團<br><br>發<br><br>表</h3>
+          <img src="image/club.jpg" />
+          <div class="card2">
+          <p class="h46">
+            <br><br>我在高二時擔任桌遊社社長，在學校舉辦的社團發表會中，向高一學弟妹介紹各社團的內容。桌遊是一項益智且促進人際交流的活動，希望透過我的介紹推廣桌遊的好處。
+          </p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <h3 class="h33">漢<br><br>服<br><br>外<br><br>拍</h3>
+        <img src="image/han.jpg" />
+        <div class="card2">
+        <p class="h46">
+          <br><br>因為對古裝感興趣，大一加入漢服社並更加認識傳統服飾。2022年元旦到台北孔廟進行外拍，透過服飾和場景彷彿回到古時候。
+        </p>
+      </div>
+      </div>
+      </section>
+        </main>
+      </section>
+      <!-- 第五區 -->
+      <section class="content4" id="certificate">
+        <h3 class="subtitle4">證書&獎狀</h3>
+        <div class="container">
+          <hi><img src="image/qin.jpg" alt=""><p class="ho">清大經濟營</p></hi>
+          <hi></hi>
+          <hi><img src="image/word.png"><p class="ho">電腦軟體應用丙級</p></hi>
+          <hi></hi>
+          <hi><img src="image/li.jpg" alt=""><p class="ho">管理學表現優異</p></hi>
+          <hi></hi>
+          <hi><img src="image/essay.jpg" alt=""><p class="ho">全國小論文比賽優等</p></hi>
+          <hi></hi>
+          <hi><img src="image/sci.jpg" alt=""><p class="ho">科學營優秀營員</p></hi>
+
+        </div>
+      </section>
+      </section>
+
+
+            <!-- 第五區 -->
+            <section class="content5" id="photos">
+              <h3 class="subtitle5">個人影像</h3>
+              <div class="animation">
+                <img src="image/han2.jpg" >
+                <img src="image/child.jpg" >
+                <img src="image/han3.jpg" >
+                <img src="image/mee.jpg" >
+                <img src="image/lovebinti.jpg" >
+                <img src="image/hahaha.jpg" >
+                <img src="image/999.jpeg" >
+                <img src="image/999.jpeg" >
+            </div>
+   </div>
+            </section>
+            </section>
+    <!-- 粉色背景的/section -->
+    </section>
+
+    <div class="clearfix"> </div>
+
+    <!-- footer -->
+    <footer>
+      
+      <h4>Copyright © 2023 By Pei-Shan&nbsp;Sun</h4>
+      
+    </footer>
+    <!--top按鈕-->
+    <a href="#top">
+    <div class="bt">
+      
+  </div>
+</a>
+</body> 
+</html>
+

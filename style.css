@@ -1,0 +1,707 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 3700px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0px;
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    max-height: 100%;
+}
+
+
+
+
+/* 開頭標題&導引 */
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+header {
+    background: #d4c685;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+nav {
+    background-color: #f3cec6d7;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+nav a {
+    padding: 10px 10px;
+    display: inline-block;
+    color: white;
+
+}
+
+nav a:hover {
+    background-color: #F0B17B;
+    color: wheat;
+}
+
+/* -----------------------我是分割線--------------------------- */
+/* 第一區背景 */
+.no1 {
+    background-image: url(image/1.png);
+    height: 500px;
+
+}
+
+/* 第一區左側 */
+.myphoto {
+    position: relative;
+    top: 40px;
+    left: 350px;
+    float: left;
+    z-index: 2;
+
+}
+
+.myphoto img {
+    width: 220px;
+    height: 280px;
+    border-radius: 10px;
+
+
+}
+
+.myphoto img:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.contact {
+    position: relative;
+    top: 117px;
+    left: 158px;
+    text-align: justify;
+}
+
+.contact :hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+/* 第一區右側 */
+tbody {
+    position: relative;
+    top: 10px;
+    left: 500px;
+    float: right;
+    border: 3px;
+    background-color: #faedcdc6;
+    border-radius: 30%;
+    width: 310px;
+    height: 205px;
+
+
+}
+
+tbody :hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.a {
+    position: relative;
+    top: 21px;
+    left: 15px;
+    color: #b85a07;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    text-align: left;
+    line-height: 150%;
+
+}
+
+.b {
+    position: relative;
+    top: 21px;
+    left: 25px;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Noto Serif TC', serif;
+    line-height: 150%;
+
+}
+
+.tbody2 {
+    position: relative;
+    top: 40px;
+    left: -240px;
+    float: right;
+    border: 3px;
+    background-color: #d8e2dcd6;
+    border-radius: 10%;
+    width: 400px;
+    height: 180px;
+}
+
+.tbody2 :hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.me {
+    position: relative;
+    font-family: 'Noto Serif TC', serif;
+    text-align: justify;
+    font-style: oblique;
+    font-weight: lighter;
+    line-height: 190%;
+    margin-left: 3em;
+    top: -5px;
+}
+
+
+.motto {
+    position: relative;
+    top: 120px;
+    left: -10px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    font-style: italic;
+}
+
+.motto:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+/* -----------------------我是分割線--------------------------- */
+/* 第二區背景 */
+.no2 {
+    height: 4086px;
+    background-size: 100% 100%;
+    background-image: url(image/4.jpg);
+    position: relative;
+}
+
+.content {
+    width: 990px;
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    height: 615px;
+    background-color: rgba(206, 189, 94, 0.632);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.content :hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.subtitle {
+    position: relative;
+    text-align: left;
+    left: 50px;
+    top: 10px;
+    font-family: 'Noto Serif TC', serif;
+    color: black
+}
+
+.program {
+    font-family: 'Noto Serif TC', serif;
+    position: relative;
+    /* top: -30px; */
+    left: 0px;
+    top: -18px;
+    text-align: center;
+    line-height: 10%;
+}
+
+.program :hover {
+    transform: scale(1.22);
+    opacity: 1;
+}
+
+
+/* 進度條程式碼 */
+.up {
+    position: relative;
+    top: -13px;
+}
+
+/* 1 */
+.array_item {
+    line-height: 90%;
+    text-align: center;
+}
+
+#file {
+    width: 50%;
+    height: 50px;
+    animation: test;
+    font-size: -30px;
+    color: black;
+    position: relative;
+    top: -10px;
+
+}
+
+
+#schedule {
+    width: 50%;
+    font-family: 'Noto Serif TC', serif;
+    position: relative;
+    left: 500px;
+    top: -20px;
+}
+
+/* 2 */
+.array_item2 {
+    width: 100%;
+    line-height: 90%;
+    text-align: center;
+}
+
+#file2 {
+    width: 50%;
+    height: 50px;
+    animation: test;
+    font-size: -20px;
+    color: black;
+    position: relative;
+    top: -10px;
+}
+
+#schedule2 {
+    width: 50%;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    position: relative;
+    left: 500px;
+    top: -20px;
+}
+
+/* 3 */
+.array_item3 {
+    width: 100%;
+    line-height: 90%;
+    text-align: center;
+}
+
+#file3 {
+    width: 50%;
+    height: 50px;
+    animation: test;
+    font-size: -20px;
+    color: black;
+    position: relative;
+    top: -10px;
+}
+
+#schedule3 {
+    width: 50%;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    position: relative;
+    left: 500px;
+    top: -20px;
+}
+
+/* 4 */
+.array_item4 {
+    width: 100%;
+    line-height: 90%;
+    text-align: center;
+}
+
+#file4 {
+    width: 50%;
+    height: 50px;
+    animation: test;
+    font-size: -20px;
+    color: black;
+    position: relative;
+    top: -10px;
+}
+
+#schedule4 {
+    width: 50%;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    position: relative;
+    left: 500px;
+    top: -20px;
+    font-weight: normal;
+}
+
+/* -----------------------我是分割線--------------------------- */
+/* 第三區 */
+.content2 {
+    width: 990px;
+    position: absolute;
+    top: 1380px;
+    left: 180px;
+    height: 620px;
+    background-color: rgba(206, 189, 94, 0.632);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.subtitle2 {
+    position: relative;
+    text-align: left;
+    left: 50px;
+    top: 10px;
+    font-family: 'Noto Serif TC', serif;
+    color: black
+}
+
+main {
+    position: relative;
+    top: -190px;
+    left: -145px;
+    width: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+}
+
+
+.card {
+    /*background-color: white;*/
+    position: relative;
+    height: 480px;
+    width: 270px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    /*背景圖*/
+    background-color: white;
+    background-size: cover;
+    text-align: center;
+    left: 10px;
+}
+
+.h22,
+.h44,
+.h33 {
+    font-family: 'Noto Serif TC', serif;
+    line-height: 50%;
+}
+
+.card img {
+    position: relative;
+    border-radius: 10%;
+
+}
+
+.card img:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.h45 {
+    font-family: 'Noto Serif TC', serif;
+    line-height: 160%;
+    text-align: left;
+    left: 2em;
+
+
+}
+
+/* -----------------------我是分割線--------------------------- */
+/* 第四區 */
+.content3 {
+    width: 990px;
+    position: absolute;
+    top: 2060px;
+    left: 180px;
+    height: 930px;
+    background-color: rgba(206, 189, 94, 0.632);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.content3 :hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.subtitle3 {
+    position: relative;
+    text-align: left;
+    left: 50px;
+    top: 10px;
+    font-family: 'Noto Serif TC', serif;
+    color: black
+}
+
+
+
+/* -----------------------我是分割線--------------------------- */
+
+.main2 {
+    position: relative;
+    top: -190px;
+    left: -123px;
+    width: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 30px;
+    text-align: center;
+    grid-area: auto;
+}
+
+/* 圖片在左 */
+
+
+.card2 {
+    /*background-color: white;*/
+    position: relative;
+    top: -345px;
+    left: 430px;
+    height: 200px;
+    width: 340px;
+    border-radius: 10px;
+    /*背景圖*/
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    text-align: center;
+}
+
+.h33 {
+    position: relative;
+    top: 70px;
+    left: -390px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    line-height: 80%;
+    padding: 0px;
+
+}
+
+.wrap img {
+    position: relative;
+    left: -200px;
+    top: -108px;
+    border-radius: 10%;
+
+}
+
+.wrap img hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+
+.wrap {
+    position: relative;
+    text-align: center;
+    background-color: #fcf3ea;
+    width: 850px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.h46 {
+    font-family: 'Noto Serif TC', serif;
+    line-height: 160%;
+    text-align: left;
+    left: 2em;
+    top: 30px;
+
+}
+
+
+
+
+
+/* -----------------------我是分割線--------------------------- */
+/* 第五區 */
+.content4 {
+    width: 990px;
+    position: absolute;
+    top: 3090px;
+    left: 180px;
+    height: 870px;
+    background-color: rgba(206, 189, 94, 0.632);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.content4 :hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.subtitle4 {
+    position: relative;
+    text-align: left;
+    left: 50px;
+    top: 10px;
+    font-family: 'Noto Serif TC', serif;
+    color: black
+}
+
+
+/* -----------------------我是分割線--------------------------- */
+.container {
+    position: relative;
+    top: 25px;
+    left: 130px;
+    max-width: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "hi hi hi"
+        "hi hi hi"
+        "hi hi hi";
+
+}
+
+.container img {
+    border-radius: 10%;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.ho {
+    position: relative;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* -----------------------我是分割線--------------------------- */
+/* 第六區 */
+.content5 {
+    width: 990px;
+    position: absolute;
+    top: 4040px;
+    left: 180px;
+    height: 580px;
+    background-color: rgba(206, 189, 94, 0.632);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.content5 :hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.subtitle5 {
+    position: relative;
+    text-align: left;
+    left: 50px;
+    top: 10px;
+    font-family: 'Noto Serif TC', serif;
+    color: black
+}
+
+/* -----------------------我是分割線--------------------------- */
+/* 動畫 */
+.animation {
+    position: relative;
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+    top: 100px;
+    left: 50px;
+}
+
+.animation img {
+    min-width: 33.4%;
+    height: 300px;
+    object-fit: cover;
+    transform: translateX(0);
+    animation: start 9s linear infinite;
+}
+
+@keyframes start {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-290%);
+    }
+}
+
+/* -----------------------我是分割線--------------------------- */
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    background-color: #d4c685;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    height: 85px;
+    /*設定footer本身高度*/
+    line-height: 150%;
+}
+
+/*按鈕*/
+.bt {
+    width: 50px;
+    height: 50px;
+    border-radius: 0%;
+    position: fixed;
+    bottom: 16px;
+    right: 25px;
+    background-image: url(image/top.png);
+
+    transition: 0.25s;
+    z-index: 99;
+    transform: scale(1.06);
+}
+
+.bt:hover {
+    opacity: 0.8;
+}
+
+
+
+main {
+    padding: 200px;
+
+}
+
+
+article {
+    float: left;
+    width: 73%;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix::before {
+    content: "";
+    clear: both;
+    display: table;
+}
